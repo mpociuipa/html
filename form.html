@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency</title>
+</head>
+<body>
+    <header>
+        <a href="./index.html"><img src="./images/logo.jpg" alt="travel"></a>
+        <a href="./index.html">Home</a>
+        <a href="./login.html">Login form</a>
+        <a href="./blog.html">Personal blog</a>
+    </header>
+    <main>
+        <form action="./index.html">
+            <fieldset>
+                <legend>Užklausos formos puslapis</legend>
+                <label for="name">Vardas:</label>
+                <input type="text" id="name" name="name" required/><br/>
+                <label for="email">El. pastas:</label>
+                <input type="email" id="email" name="email" required/><br/>
+                <label for="phone">tel.nr.</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{5}" required /><br/>
+                <label for="name">Rūšis</label>
+                <select name="pets" id="pet-select">
+                    <option value="">--Please choose an option--</option>
+                    <option value="people">People</option>
+                    <option value="cat">Cat</option>
+                    <option value="hamster">Hamster</option>
+                    <option value="parrot">Parrot</option>
+                    <option value="spider">Spider</option>
+                    <option value="goldfish">Goldfish</option>
+                </select><br/>
+                <label for="date">Data:</label>
+                <input type="date" id="date" name="date" required/><br/>
+                <legend>Choose your favorite</legend>
+                <input type="checkbox" id="kraken" name="monster" value="K" checked/>
+                <label for="kraken">Kraken</label><br />
+
+                <input type="checkbox" id="sasquatch" name="monster" value="S" required/>
+                <label for="sasquatch">Sasquatch</label><br />
+
+                <input type="checkbox" id="mothman" name="monster" value="M" required/>
+                <label for="mothman">Mothman</label><br/>
+                <input type="checkbox" id="gotham" name="monster" value="G" required/>
+                <label for="gotham">Gotham</label><br/>
+                <label for="text">Please specify your role</label><br/>
+                <input type="radio" id="admin" name="monster" value="K" checked/>
+                <label for="admin">Admin</label><br />
+
+                <input type="radio" id="engineer" name="monster" value="S" required/>
+                <label for="engineer">Engineer</label><br />
+
+                <input type="radio" id="manager" name="monster" value="M" required/>
+                <label for="manager">Manager</label><br/>
+                <input type="radio" id="guest" name="monster" value="M" required/>
+                <label for="guest">Guest</label><br/>
+                <label for="story">Papasakok savo lūkesčius:</label>
+                <textarea name="story" id="story" cols="30" rows="10">Noriu gerų atostogų...</textarea><br/>
+                <a href="./index.html"><button type="submit" required >Home page</button></a>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <address>
+            <a href="mailto:m.luth@gmail.com">Email</a><br/>
+            <a href="tel:+123456789">Phone</a>
+        </address>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d36732.12595611663!2d23.956997252929703!3d54.872062600480916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2slt!4v1707999484108!5m2!1sen!2slt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p>Copyright &copy; 2024 by Mantas ! All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
