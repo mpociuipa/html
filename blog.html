@@ -4,57 +4,144 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Agency</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
     <header>
-        <a href="./index.html"><img src="./images/logo.jpg" alt="travel"></a>
-        <a href="./index.html">Home</a>
-        <a href="./form.html">Kalionės užklausos formos</a>
-        <a href="./login.html">Login form</a>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="./index.html"><img height="50px" src="./images/logo.jpg" alt="travel" loading="lazy"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                      <a class="nav-link dropdown-toggle" href="./index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Home
+                        </a>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./index.html">Kelionių pasiūlymai</a></li>
+                    <li><a class="dropdown-item" href="./index.html">Autonuoma</a></li>
+                    <li><a class="dropdown-item" href="./index.html">Patarimai keliaujantiems</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="./index.html">Kelionių žurnalas</a></li>
+                  </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./form.html">Kalionės užklausos formos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./login.html">Login form</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./blog.html">Personal blog</a>
+                  </li>
+                 
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
     </header>
-    <main>
+    <main class="container">
         <article>
-            <h1>BLOG'AS</h1>
-            <h2>Skrendam</h2>
-            <figure>
-            <img src="./images/afrika.jpg" alt="afrika"/>
-                <figcaption>Gaila, bet išskrendame namo</figcaption>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere cum vitae omnis. Modi quas, soluta dolorem officiis laudantium voluptas optio dolorum reprehenderit architecto doloribus est dolor sint incidunt porro blanditiis repellat aspernatur. Autem quos labore ducimus vel ipsa illo unde magnam perspiciatis eos id nesciunt pariatur eaque laudantium, similique placeat omnis fugiat accusamus dolore doloremque, sunt impedit quam eligendi. Illo laboriosam sapiente voluptates iste earum, laborum iusto dicta qui tempora dolores nesciunt fugit molestias nobis sequi consectetur saepe, corporis ipsam.</p>
-            </figure>
-            <h2>pažiūrėkime į dangų.</h2>
-            <figure>
-            <img src="./images/alpes.jpg" alt="alpes"/>
-            <figcaption>Čia reikėtu sugrįžti dar kartą.</figcaption>
-            <img src="./images/graikija.jpg" alt="graikija"/>
-            <figcaption>Čia karšta.</figcaption>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel possimus, quod maxime excepturi sit dolor quos impedit mollitia nesciunt? Eius quos tenetur veniam tempora, voluptate illum animi amet eveniet est a, nam deleniti? Obcaecati nesciunt magni vitae aperiam quisquam illum. Harum ipsa nesciunt ab ratione odit quos praesentium adipisci aspernatur earum in accusamus consequatur dolores quasi facilis inventore ducimus eos assumenda natus fuga perferendis consectetur, ipsum exercitationem eligendi. Veniam tempore quae a quisquam accusantium laborum commodi autem, facere maiores, repellendus quam ullam porro minus, delectus accusamus? Saepe quam doloribus asperiores?</p>
-            </figure>
-            <figure>
-                <h2>Berlynas</h2>
-            <img src="./images/Berlin.jpg" alt="berlin"/>
-            <figcaption>Čia grąžu.</figcaption>
-            <img src="./images/Swiss.jpg" alt="swiss"/>
-            <figcaption>Čia buvau.</figcaption>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel possimus, quod maxime excepturi sit dolor quos impedit mollitia nesciunt? Eius quos tenetur veniam tempora, voluptate illum animi amet eveniet est a, nam deleniti? Obcaecati nesciunt magni vitae aperiam quisquam illum. Harum ipsa nesciunt ab ratione odit quos praesentium adipisci aspernatur earum in accusamus consequatur dolores quasi facilis inventore ducimus eos assumenda natus fuga perferendis consectetur, ipsum exercitationem eligendi. Veniam tempore quae a quisquam accusantium laborum commodi autem, facere maiores, repellendus quam ullam porro minus, delectus accusamus? Saepe quam doloribus asperiores?</p>
-            </figure>
-            <figure>
-                <h2>Čia mūsų europa</h2>
-            <img src="./images/europa.jpg" alt="europa"/>
-            <figcaption>Čia mes gyvename.</figcaption>
-            <img src="./images/USA.webp" alt="usa"/>
-            <figcaption>Čia daug  gyventoju.</figcaption>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel possimus, quod maxime excepturi sit dolor quos impedit mollitia nesciunt? Eius quos tenetur veniam tempora, voluptate illum animi amet eveniet est a, nam deleniti? Obcaecati nesciunt magni vitae aperiam quisquam illum. Harum ipsa nesciunt ab ratione odit quos praesentium adipisci aspernatur earum in accusamus consequatur dolores quasi facilis inventore ducimus eos assumenda natus fuga perferendis consectetur, ipsum exercitationem eligendi. Veniam tempore quae a quisquam accusantium laborum commodi autem, facere maiores, repellendus quam ullam porro minus, delectus accusamus? Saepe quam doloribus asperiores?</p>
-            </figure>
-            <button>Read more</button>
+            <div class="row">
+                <div class="col-12 m-4 text-center">
+                <h2>BLOG'AS</h2>
+        </div>
+        </div>
+
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="./images/afrika.jpg" class="card-img-top" alt="...">
+                    <figcaption>Gaila, bet išskrendame namo</figcaption>
+                    <div class="card-body">
+                      <h5 class="card-title">Skrendam</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere cum vitae omnis. Modi quas, soluta dolorem officiis laudantium voluptas optio dolorum reprehenderit architecto doloribus est dolor sint incidunt porro blanditiis repellat aspernatur. Autem quos labore ducimus vel ipsa illo unde magnam perspiciatis eos id nesciunt pariatur eaque laudantium, similique placeat omnis fugiat accusamus dolore doloremque, sunt impedit quam eligendi. Illo laboriosam sapiente voluptates iste earum, laborum iusto dicta qui tempora dolores nesciunt fugit molestias nobis sequi consectetur saepe, corporis ipsam..</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="./images/alpes.jpg" class="card-img-top" alt="...">
+                    <figcaption>Čia reikėtu sugrįžti dar kartą.</figcaption>
+                    <div class="card-body">
+                      <h5 class="card-title">Pažiūrėkime į dangų.</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel possimus, quod maxime excepturi sit dolor quos impedit mollitia nesciunt? Eius quos tenetur veniam tempora, voluptate illum animi amet eveniet est a, nam deleniti? Obcaecati nesciunt magni vitae aperiam quisquam illum. Harum ipsa nesciunt ab ratione odit quos praesentium adipisci aspernatur earum in accusamus consequatur dolores quasi facilis inventore ducimus eos assumenda natus fuga perferendis consectetur, ipsum exercitationem eligendi. Veniam tempore quae a quisquam accusantium laborum commodi autem, facere maiores, repellendus quam ullam porro minus, delectus accusamus? Saepe quam doloribus asperiores?This card has supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="./images/graikija.jpg" class="card-img-top" alt="...">
+                    <figcaption>Čia karšta.</figcaption>
+                    <div class="card-body">
+                      <h5 class="card-title">Graikija</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel possimus, quod maxime excepturi sit dolor quos impedit mollitia nesciunt? Eius quos tenetur veniam tempora, voluptate illum animi amet eveniet est a, nam deleniti? Obcaecati nesciunt magni vitae aperiam quisquam illum. Harum ipsa nesciunt ab ratione odit quos praesentium adipisci aspernatur earum in accusamus consequatur dolores quasi facilis inventore ducimus eos assumenda natus fuga perferendis consectetur, ipsum exercitationem eligendi. Veniam tempore quae a quisquam accusantium laborum commodi autem, facere maiores, repellendus quam ullam porro minus, delectus accusamus? Saepe quam doloribus asperiores?</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card mt-3 h-100">
+                    <img src="./images/Swiss.jpg" class="card-img-top" alt="...">
+                    <figcaption>Čia buvau.</figcaption>
+                    <div class="card-body">
+                      <h5 class="card-title">Šveicarija</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere cum vitae omnis. Modi quas, soluta dolorem officiis laudantium voluptas optio dolorum reprehenderit architecto doloribus est dolor sint incidunt porro blanditiis repellat aspernatur. Autem quos labore ducimus vel ipsa illo unde magnam perspiciatis eos id nesciunt pariatur eaque laudantium, similique placeat omnis fugiat accusamus dolore doloremque, sunt impedit quam eligendi. Illo laboriosam sapiente voluptates iste earum, laborum iusto dicta qui tempora dolores nesciunt fugit molestias nobis sequi consectetur saepe, corporis ipsam..</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="./images/europa.jpg" class="card-img-top" alt="...">
+                    <figcaption>Čia mūsų europa.</figcaption>
+                    <div class="card-body">
+                      <h5 class="card-title">Išvažiuojame.</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel possimus, quod maxime excepturi sit dolor quos impedit mollitia nesciunt? Eius quos tenetur veniam tempora, voluptate illum animi amet eveniet est a, nam deleniti? Obcaecati nesciunt magni vitae aperiam quisquam illum. Harum ipsa nesciunt ab ratione odit quos praesentium adipisci aspernatur earum in accusamus consequatur dolores quasi facilis inventore ducimus eos assumenda natus fuga perferendis consectetur, ipsum exercitationem eligendi. Veniam tempore quae a quisquam accusantium laborum commodi autem, facere maiores, repellendus quam ullam porro minus, delectus accusamus? Saepe quam doloribus asperiores?This card has supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="./images/USA.webp" class="card-img-top" alt="...">
+                    <figcaption>Čia daug gyventoju.</figcaption>
+                    <div class="card-body">
+                      <h5 class="card-title">Čia mes gyvename.</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel possimus, quod maxime excepturi sit dolor quos impedit mollitia nesciunt? Eius quos tenetur veniam tempora, voluptate illum animi amet eveniet est a, nam deleniti? Obcaecati nesciunt magni vitae aperiam quisquam illum. Harum ipsa nesciunt ab ratione odit quos praesentium adipisci aspernatur earum in accusamus consequatur dolores quasi facilis inventore ducimus eos assumenda natus fuga perferendis consectetur, ipsum exercitationem eligendi. Veniam tempore quae a quisquam accusantium laborum commodi autem, facere maiores, repellendus quam ullam porro minus, delectus accusamus? Saepe quam doloribus asperiores?</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn-primary mt-5" type="submit"><a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://kelioniuakademija.lt/?utm_source=google&utm_medium=cpc&utm_campaign=808426240&utm_content=42748355675&utm_term=kelioniu%20agenturos&gad_source=1&gclid=Cj0KCQjwlN6wBhCcARIsAKZvD5j79rQTQu-3toGyFau64LeSyiceKcLd33bg38a_pig8Ev5g5PtUI2MaAnDCEALw_wcB&gclsrc=aw.ds">Skaitykite daugiau</a></button>
         </article>
     </main>
-    <footer>
-        <address>
-            <a href="mailto:m.luth@gmail.com">Email</a><br/>
-            <a href="tel:+123456789">Phone</a>
-        </address>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d36732.12595611663!2d23.956997252929703!3d54.872062600480916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2slt!4v1707999484108!5m2!1sen!2slt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <p>Copyright &copy; 2024 by Mantas ! All Rights Reserved.</p>
-    </footer>
+    <address class="container mt-5">
+        <div class="card mb-3">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d36732.12595611663!2d23.956997252929703!3d54.872062600480916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2slt!4v1707999484108!5m2!1sen!2slt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="card-img-top" alt="..."></iframe>
+            <div class="card-body">
+              <h5 class="card-title">Address</h5>
+              <p class="card-text"><a href="mailto:m.luth@gmail.com">Email</a></p>
+              <p class="card-text"><small class="text-body-secondary"><a href="tel:+123456789">Phone</a></small></p>
+            </div>
+          </div>
+    </address>
+    <footer class="footer">
+        <div class="footer-text">
+    <p>Copyright &copy; 2024 by Mantas ! All Rights Reserved.</p>
+    </div>
+    <div class="footer-iconTop">
+        <a href="#"><i class="bi bi-arrow-up"></i></a>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
